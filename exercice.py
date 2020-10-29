@@ -6,6 +6,7 @@ def check_brackets(text, brackets):
 	# Associer les ouvrantes et les fermantes (a l<aide d<un dict)
 	opening_brackets = dict(zip(brackets[0::2], 	brackets[1::2]))
 	closing_brackets = dict(zip(brackets[1::2], 	brackets[0::2]))
+	print(closing_brackets)
 	# Verifier les ouvertures/fermetures
 	bracket_stack = []
 	#Pour tout cahr dans le string
